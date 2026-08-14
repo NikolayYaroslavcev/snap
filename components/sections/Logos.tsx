@@ -4,6 +4,7 @@ import { Container } from '@/components/ui/Container';
 
 const CLIENTS = ['Авито', 'Циан', 'Лента', 'Ozon', 'Wildberries', 'Т-Банк'];
 const SPEED_PX_PER_SEC = 31;
+const SET_COPIES = 4;
 
 function LogoSet({ hidden = false, setRef }: { hidden?: boolean; setRef?: React.Ref<HTMLDivElement> }) {
   return (
@@ -60,7 +61,9 @@ export function Logos() {
         <div className="overflow-hidden">
           <div ref={trackRef} className="flex w-max items-center will-change-transform">
             <LogoSet setRef={setRef} />
-            <LogoSet hidden />
+            {Array.from({ length: SET_COPIES - 1 }).map((_, i) => (
+              <LogoSet key={i} hidden />
+            ))}
           </div>
         </div>
       </Container>
