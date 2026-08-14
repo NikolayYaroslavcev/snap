@@ -1,0 +1,14 @@
+# Worktree isolation (this project's plan workspace)
+.worktrees/
+.superpowers/
+
+# Node / Next.js
+node_modules/
+.next/
+out/
+.env*.local
+npm-debug.log*
+*.tsbuildinfo
+next-env.d.ts
+docs/
+*.pdf
