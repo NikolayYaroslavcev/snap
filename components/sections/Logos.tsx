@@ -32,14 +32,17 @@ export function Logos() {
     if (setRef.current) resizeObserver.observe(setRef.current);
     document.fonts?.ready?.then(measure);
 
-    const start = performance.now();
+    const MAX_FRAME_DELTA_SEC = 1 / 30;
+    let position = 0;
+    let last = performance.now();
     let raf = 0;
 
     function tick(now: number) {
+      const deltaSec = Math.min((now - last) / 1000, MAX_FRAME_DELTA_SEC);
+      last = now;
       if (distance > 0 && trackRef.current) {
-        const elapsedSec = (now - start) / 1000;
-        const offset = (elapsedSec * SPEED_PX_PER_SEC) % distance;
-        trackRef.current.style.transform = `translateX(${-offset}px)`;
+        position = (position + deltaSec * SPEED_PX_PER_SEC) % distance;
+        trackRef.current.style.transform = `translateX(${-position}px)`;
       }
       raf = requestAnimationFrame(tick);
     }
