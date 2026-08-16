@@ -10,7 +10,7 @@ const ITEMS = [
 
 export function Roadmap() {
   return (
-    <section className="py-14 md:py-20">
+    <section className="py-10 md:py-20">
       <Container>
         <SectionHeading title="Каждый день — новый релиз" subtitle="Приоритизируем бэклог для ваших целей." />
         <div className="grid gap-8 md:grid-cols-4">

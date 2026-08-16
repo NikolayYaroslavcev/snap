@@ -35,7 +35,7 @@ export function IntegrationsSection() {
   const active = INTEGRATIONS.find((i) => i.title === openTitle) ?? null;
 
   return (
-    <section className="py-14 md:py-20">
+    <section className="py-10 md:py-20">
       <Container>
         <SectionHeading eyebrow="Интеграции" title="Встраивается в ваш существующий рабочий процесс" />
         <div className="grid gap-6 md:grid-cols-2">

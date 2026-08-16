@@ -92,7 +92,7 @@ const SCENARIO_TABS: TabItem[] = [
 
 export function ScenariosSection() {
   return (
-    <section id="scenarios" className="py-14 md:py-20">
+    <section id="scenarios" className="py-10 md:py-20">
       <Container>
         <SectionHeading
           eyebrow="Кейсы использования"

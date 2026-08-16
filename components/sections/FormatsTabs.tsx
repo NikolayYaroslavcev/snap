@@ -33,7 +33,7 @@ const FORMAT_TABS: TabItem[] = [
 
 export function FormatsTabs() {
   return (
-    <section id="formats" className="py-14 md:py-20">
+    <section id="formats" className="py-10 md:py-20">
       <Container>
         <SectionHeading title="Любой контент в фирменном стиле за считанные минуты" />
         <Tabs items={FORMAT_TABS} />

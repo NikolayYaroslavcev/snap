@@ -12,7 +12,7 @@ const FAQ_ITEMS = [
 
 export function Faq() {
   return (
-    <section id="faq" className="py-14 md:py-20">
+    <section id="faq" className="py-10 md:py-20">
       <Container>
         <SectionHeading title="Частые вопросы" />
         <div className="mx-auto max-w-2xl">

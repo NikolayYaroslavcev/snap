@@ -35,7 +35,7 @@ export function PricingSection() {
   const [yearly, setYearly] = useState(false);
 
   return (
-    <section className="py-14 md:py-20">
+    <section className="py-10 md:py-20">
       <Container>
         <SectionHeading eyebrow="Тарифы" title="Прозрачные тарифы для команды любого размера" />
         <div className="mb-10 flex justify-center">

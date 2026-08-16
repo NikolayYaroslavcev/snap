@@ -39,7 +39,7 @@ const FEATURES = [
 
 export function Process() {
   return (
-    <section className="py-14 md:py-20">
+    <section className="py-10 md:py-20">
       <Container>
         <SectionHeading
           title="Одна платформа — весь маркетинг"

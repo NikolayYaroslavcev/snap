@@ -5,9 +5,9 @@ type Variant = 'primary' | 'secondary' | 'ghost';
 // Ring color is per-variant, not shared: secondary renders on dark surfaces
 // (e.g. the highlighted PricingSection card), where a black ring is invisible.
 const styles: Record<Variant, string> = {
-  primary: 'bg-dark text-ink-inverse hover:bg-black focus-visible:ring-black/20',
-  secondary: 'bg-surface text-ink border border-black/10 hover:bg-page focus-visible:ring-white/60',
-  ghost: 'bg-transparent text-ink hover:bg-black/5 focus-visible:ring-black/20',
+  primary: 'bg-dark text-ink-inverse [@media(hover:hover)]:hover:bg-black focus-visible:ring-black/20',
+  secondary: 'bg-surface text-ink border border-black/10 [@media(hover:hover)]:hover:bg-page focus-visible:ring-white/60',
+  ghost: 'bg-transparent text-ink [@media(hover:hover)]:hover:bg-black/5 focus-visible:ring-black/20',
 };
 
 export function Button({

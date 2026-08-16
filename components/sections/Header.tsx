@@ -1,5 +1,6 @@
 'use client';
 import { useEffect, useState } from 'react';
+import Link from 'next/link';
 import { Container } from '@/components/ui/Container';
 import { Button } from '@/components/ui/Button';
 
@@ -30,12 +31,12 @@ export function Header() {
             scrolled ? 'shadow-[0_4px_24px_rgba(0,0,0,0.08)]' : ''
           }`}
         >
-          <span className="flex items-center gap-2 text-lg font-semibold text-ink">
+          <Link href="/" className="flex items-center gap-2 text-lg font-semibold text-ink">
             <svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
               <path d="M12 2 3 7v10l9 5 9-5V7l-9-5Zm0 2.3 6.5 3.6L12 11.5 5.5 7.9 12 4.3ZM5 9.5l6 3.3v6.9l-6-3.3V9.5Zm8 10.2v-6.9l6-3.3v6.7l-6 3.5Z" />
             </svg>
             снэпбилд
-          </span>
+          </Link>
           <nav className="hidden gap-8 md:flex">
             {NAV_LINKS.map((link) => (
               <a key={link.href} href={link.href} className="text-sm font-medium text-ink-secondary hover:text-ink">

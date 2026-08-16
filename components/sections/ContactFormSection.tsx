@@ -28,7 +28,7 @@ export function ContactFormSection() {
 
   if (submitted) {
     return (
-      <section className="py-14 md:py-20">
+      <section className="py-10 md:py-20">
         <Container>
           <Card className="mx-auto max-w-lg text-center">
             <h3 className="text-xl font-semibold text-ink">Заявка отправлена</h3>
@@ -40,7 +40,7 @@ export function ContactFormSection() {
   }
 
   return (
-    <section className="py-14 md:py-20">
+    <section className="py-10 md:py-20">
       <Container>
         <SectionHeading eyebrow="Форма обратной связи" title="Обсудим ваш кейс" />
         <Card className="mx-auto max-w-lg">

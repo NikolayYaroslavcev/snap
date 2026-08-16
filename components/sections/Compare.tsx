@@ -11,7 +11,7 @@ const COLUMNS = ['Особенности', 'снэпбилд', 'Claude + Figma M
 
 export function Compare() {
   return (
-    <section className="py-14 md:py-20">
+    <section className="py-10 md:py-20">
       <Container>
         <SectionHeading
           title="Почему команды выбирают Снэпбилд"

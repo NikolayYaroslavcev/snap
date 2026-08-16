@@ -39,7 +39,7 @@ const ITEMS = [
 
 export function Security() {
   return (
-    <section id="security" className="py-14 md:py-20">
+    <section id="security" className="py-10 md:py-20">
       <Container>
         <SectionHeading title="Безопасность без компромиссов" />
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

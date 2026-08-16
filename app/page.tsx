@@ -15,6 +15,7 @@ import { ContactFormSection } from '@/components/sections/ContactFormSection';
 import { FinalCta } from '@/components/sections/FinalCta';
 import { Footer } from '@/components/sections/Footer';
 import { Reveal } from '@/components/ui/Reveal';
+import { ScrollToTopButton } from '@/components/ui/ScrollToTopButton';
 
 export default function Home() {
   return (
@@ -61,6 +62,7 @@ export default function Home() {
         <FinalCta />
       </Reveal>
       <Footer />
+      <ScrollToTopButton />
     </main>
   );
 }
